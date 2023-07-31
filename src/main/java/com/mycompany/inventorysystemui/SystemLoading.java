@@ -4,6 +4,7 @@
  */
 package com.mycompany.inventorysystemui;
 
+import com.mycompany.inventorysystemui.userforms.LoginForm;
 import java.awt.Color;
 
 /**
@@ -39,13 +40,14 @@ public class SystemLoading extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
-        jPanel11.setBackground(new java.awt.Color(0, 102, 255));
+        jPanel11.setBackground(new java.awt.Color(0, 153, 255));
         jPanel11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel11.setForeground(new java.awt.Color(102, 153, 255));
         jPanel11.setLayout(null);
 
-        jPanel21.setBackground(new java.awt.Color(102, 153, 255));
+        jPanel21.setBackground(new java.awt.Color(204, 204, 255));
         jPanel21.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel21.setForeground(new java.awt.Color(51, 102, 255));
 
@@ -54,25 +56,25 @@ public class SystemLoading extends javax.swing.JFrame {
 
         lblInventory1.setBackground(new java.awt.Color(255, 255, 51));
         lblInventory1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        lblInventory1.setForeground(new java.awt.Color(255, 255, 255));
+        lblInventory1.setForeground(new java.awt.Color(51, 51, 0));
         lblInventory1.setText("WELCOME TO E - INVENTORY");
 
         jLabel11.setBackground(new java.awt.Color(255, 255, 51));
         jLabel11.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setForeground(new java.awt.Color(51, 51, 0));
         jLabel11.setText("A system software for inventory management");
 
         loadingBar121.setBackground(new java.awt.Color(255, 255, 255));
         loadingBar121.setForeground(new java.awt.Color(255, 255, 255));
-        loadingBar121.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        loadingBar121.setBorder(null);
         loadingBar121.setBorderPainted(false);
 
         wala.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        wala.setForeground(new java.awt.Color(255, 255, 255));
+        wala.setForeground(new java.awt.Color(51, 51, 0));
         wala.setText("numbers");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(51, 51, 0));
         jLabel3.setText("Loading...");
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
@@ -82,7 +84,7 @@ public class SystemLoading extends javax.swing.JFrame {
             .addGroup(jPanel21Layout.createSequentialGroup()
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(10, Short.MAX_VALUE)
                         .addComponent(loadingBar121, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel21Layout.createSequentialGroup()
                         .addGap(100, 100, 100)
@@ -90,7 +92,7 @@ public class SystemLoading extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
-                .addGap(0, 162, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel21Layout.createSequentialGroup()
                         .addComponent(jLabel22)
@@ -102,7 +104,7 @@ public class SystemLoading extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(wala, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(208, 208, 208))))
+                        .addGap(196, 196, 196))))
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -115,11 +117,11 @@ public class SystemLoading extends javax.swing.JFrame {
                 .addComponent(jLabel11)
                 .addGap(54, 54, 54)
                 .addComponent(loadingBar121, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(wala)
                     .addComponent(jLabel3))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         jPanel11.add(jPanel21);
